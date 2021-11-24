@@ -1,4 +1,4 @@
-const without = function(source, seeya) {
+const without = function(heya, buddy) {
   let later = [];
   let hello = [];
   for (let i = 0; i < source.length; i++) {
