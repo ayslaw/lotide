@@ -1,12 +1,52 @@
-const without = function(heya, buddy) {
-  let later = [];
-  let hello = [];
-  for (let i = 0; i < source.length; i++) {
-    if (seeya.includes(source[i])) {
-      later.push(source[i]);
-    } else {
-      hello.push(source[i]);
+const assertNew = function(arr1, arr2) {
+
+  let i = 0;
+  let answer = Boolean;
+    
+  for (i = 0; i < arr1.length; i++) {
+    
+      if (arr1.length === arr2.length) {
+      if (arr1[i] === arr2[i]) {
+          answer = true;
+          } else if (arr1[i] !== arr2[i]) {
+            answer = false;
+          }
+        } else {
+          answer = false
+        }
+      }
+      return answer;
+  };
+  
+    let assertArraysEqual = function(arr) {
+      if (arr === false) {
+          console.log('pass');
+      } else {
+          if (arr === true) {
+              console.log('fail');
+          }
+      }
+  };
+  
+  let i = 0;
+  let n = 0;
+  
+  const without = function(source, itemsToRemove) {
+    let withoutArray = source;
+    let arr = [];
+  
+  
+    for (i = 0; i < source.length; i++) {
+      if (!itemsToRemove.includes(source[i])) {
+        arr.push(source[i]);
+      }
     }
+    return arr;
   }
-  return hello;
-};
+  
+  const words = ["hello", "world", "lighthouse"];
+  console.log(without(words, ["lighthouse", "world"]));
+  assertNew(words, ["hello", "world", "lighthouse"]);
+  
+  console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
+  console.log(without([1, 2, 3], [1]));  // [2, 3]
