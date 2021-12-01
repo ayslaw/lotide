@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "mini clone of lodash library",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayslaw/lotide.git"
+  },
+  "author": "@ayslaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayslaw/lotide/issues"
+  },
+  "homepage": "https://github.com/ayslaw/lotide#readme"
+}
